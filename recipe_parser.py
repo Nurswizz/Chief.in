@@ -17,7 +17,6 @@ def fetch_recipes(query, app_id, app_key):
         print(f"Failed to fetch recipes. Status code: {response.status_code}")
         return []
 
-# Example usage:
 def parse(query):
     recipes = fetch_recipes(query, "91c5b683", "286540e192be31c8a248139bf56f734d")
 

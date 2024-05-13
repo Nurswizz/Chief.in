@@ -1,0 +1,123 @@
+body {
+    font-family: "Poetsen One", sans-serif;
+    margin: 0;
+    background-image: url(images/bg.jpg);
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 54px;
+    padding-left: 50px;
+    position: relative;
+}
+
+.logo span:nth-child(1) {
+    color: aliceblue;
+}
+
+.logo span:nth-child(2) {
+    color: red;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.644);
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.nav1 {
+    color: aliceblue;
+    font-size: 36px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.nav1:hover
+{
+    color:rgb(136, 136, 136);
+}
+
+.nav2 {
+    color: aliceblue;
+    font-size: 36px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.nav2:hover
+{
+    color:rgb(136, 136, 136);
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    width: 500px;
+    margin-right: 600px;
+    margin-top: 10px;
+}
+
+.search-container input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none; /* Remove input focus outline */
+}
+
+.search-container input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    outline: none; /* Remove button focus outline */
+}
+
+/* Style for button hover effect */
+.search-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.content
+{
+    height: 817px;
+    width: 1000px;
+    background-color: rgba(0, 0, 0, 0.644);
+    position: absolute;
+    left: 24%;
+    color: aliceblue;
+    display: flex;
+}
+
+.content img
+{
+    height: 250px;
+    width: auto;
+    margin: 75px;
+}
+
+.content p
+{
+    font-size: 36px;
+}
+
+.horizontal-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .horizontal-list li {
+    display: inline-block; /* Display list items in a row */
+    margin-right: 10px; /* Add spacing between items (adjust as needed) */
+  }
+  

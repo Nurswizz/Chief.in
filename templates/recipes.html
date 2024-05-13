@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='recipestyle.css') }}">
+    <title>Recipes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <script>
+        function redirect_chicken() {
+            var recipeUrl = "/recomendation/chicken";
+            window.location.href = recipeUrl;
+        }
+
+        function redirect_pasta() {
+            var recipeUrl = "/recomendation/pasta";
+            window.location.href = recipeUrl;
+        }
+
+        function redirect_shrimp() {
+            var recipeUrl = "/recomendation/shrimp";
+            window.location.href = recipeUrl;
+        }
+    </script>
+    
+</head>
+<body>
+    <div class="header">
+        <a href="/" class="logo">
+            <span>Food</span> 
+            <span>Master</span>
+        </a>
+
+        <div class="search-container">
+            <form method="GET" action="/result">
+                <input name="food" type="text" class="search-bar" placeholder="Search...">
+                <button type="submit" class="search-button" style="background: transparent; border: 0;"></button>
+            </form>
+        </div>
+        <div class="hyperlinks">
+            <a href="/recipes" class="nav1">Recomendations</a>
+        </div>
+
+    </div>
+    <div class="content">
+        <div class="recipe" onclick="redirect_chicken()">
+            <h1>Rotisserie Chicken Recipe</h1>
+            <img src="https://edamam-product-images.s3.amazonaws.com/web-img/88e/88edb31264dc1e58b37c2fec3f99a244.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEAsaCXVzLWVhc3QtMSJGMEQCIA%2FxrsGMlpdJb9ZUE7sZp4rWpWwJ0Nd01q9bzdpZeP%2FqAiBIwwHaEQmB8JaPYlxFwMD7SjB3wd8KJZDP8c4JVVGMgCq4BQh0EAAaDDE4NzAxNzE1MDk4NiIM0TBZBIebYyrsSJc4KpUF3PM2URumBxJTKs0AQdKiXzPdJlnZdWJjyDKzGPYt26Jyor9T7ZsIzHw%2B%2BLC4KqzV8EYm5BLTinahXX2CJ47hkU2UHa0hfRH3jT7u%2BFh5TyZSPMa8J5IrMlSW%2BB%2BEydBNBJTQ3REUiZOax%2B8ylyEFUjNXRUiwGlzbxQ%2Bp%2BbRKVO3VzU2UI79a2aYpCGioxxMkyf53GRiMkCyP3%2B6W0bq0LuBvWlkbBQLQk1Rr1Cgjhg1hLClXadj5Hk3UEhHj%2F4h6c%2BqyGB5h2AYxfAbQXlX28x1FIzP3yFFBwsNx8SJSc6vPwJ3OlU6MRMvcisvWJEKozvk8LB%2BTyAeDFapnQ6B1E0NrAiW01mKHBR7kehVbJram3ofytE9KLhXDDrX%2F6cO%2B66683RLPouII0Pht5K23hRNeiFaJCMhDu9had58eRh4ss1ohArlfiJJR4R%2F6F7agOgCWE5nBglfEztKRJHRYRKj0P3E%2BtDKImT%2FTNr2t0mTCHPJm8Idpdw5WNyOstrZwFkN%2BoNfGFf%2FnueLnBW%2BKxtlpWs4OFctkAnljoA9Rn0mKj%2BDU6dg6uRBh8MPqfTFjn3wlxo3keRvCCdbvfTtOCawHU27aeM4Ex92eM82AVxLo2QED61w1IkJ2xh333AHcZwXNE%2F2IMLkiWEIDDDtZizzn7JqYauWHiv10xQEUwH3S3w3q6nJD0RMXpnHqOVYepYZO968C1z%2ByC3EU6bQhpNuHKJQJl%2F89iQahUb8KQIhuf9Wznrj3CLl9PvSzigdqhpCz1y3YbCAsm8xQNvzhA35QJ%2BldapsJ%2Ba%2FDN%2BCkVtIsWGtPV%2Fg9Sh7JR%2F8Q1R%2BdRvXKC8nvhFV9jFIxiMUMgrdjq8cTEg4c9wgDubeSNUMByq8JBTDE44eyBjqyAQYPoYJ%2FVddhtrUue1dFy%2BedIr7IJuwgsT8EprCJhkwN%2FsjPsSTZO8dXks3LLKNQ1ee3jgiDlxjApbbcCbROaz2lvdlRAIgQgtPPCJr7piY5ENL4VcNpD83GsBSSvvEbZBHXTvzYol0fTRRJYGXp8%2BzEFDY8zGSnPWWA%2FjYxW8CjJNHauqQCpSJ5yavlYRFG3sHXvB4TRGnhKa6VDjmB2Bt7cFHpCVGI0QKibO25A8fV2FA%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240513T124926Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFGCDZTZ6R%2F20240513%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=32465a98e8c2bfb2cc7d44e194022d0659386a316f1210f127ae0737dfca56ca">
+            <p>Season a whole chicken with salt, pepper, and herbs. Roast in the oven or on the grill until golden and cooked through. Baste with olive oil and pan juices for crispy skin. Serve with roasted vegetables or salad.</p>
+        </div>
+        <div class="recipe" onclick="redirect_pasta()">
+            <h1>Pasta alla Gricia Recipe</h1>
+            <img src="https://edamam-product-images.s3.amazonaws.com/web-img/bb5/bb5bad0cbcb94ad2ef0895d444f30291.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEA0aCXVzLWVhc3QtMSJHMEUCIQC8qwt2U065B5dN552JejQ%2FII6SusSx3mhsydPGmtQFZAIgMligh9m3yeUr7OhPBPrJPDC1TcdsLpfzR7pEUYCquiUquQUIdhAAGgwxODcwMTcxNTA5ODYiDGyoFrpeFbC%2BpxzYcSqWBW%2BvjDsGiYAXMdSoxo0D7vti6w9t9EJM2SX6zImP4IIx7Sq3bBtPyCD8CxP3GbYo4%2FfoGtIptj4qLcWYbbIYpKblw3OFWUsyRkR3FFnIcJP6GNDuoAdBbZkcYwugZwzlQxEwVebohWwqd745rIa%2BIbSUbHbKzM5UpiPpc0yjLvFO2qttlyD0KQwuQwe36YpSKNmesKXKx2bevnD%2BZLR5dYOd3K4V5d58GOknHXt1OkbOsuuCesFOBqu9XQCw6zJLWVlDFN%2BqOnv6Zb%2FCmeKByJTGca0Mh37xiTZcDWccjwF3zgy57uR5ZjiRbu9Y0BeJAn4BrL67vJ95zsmawertA7GeLr%2FwILaL%2FSTe9Yu3GklJPJWw75BcYNJnT3ZndEaQemsyYCpYTKMUlqoONCWDUSqlRCzE2aFnIjkOcc3m4cZ7KTn9J7r6b%2FyWAd2%2B6S1Wj4jv28p9wHRi19h%2B%2BfAj2X3Y0l1rcxGtxLsTHA9XUwMQWqTFxZCC83qRkqVSkcFDsB2y1BJPijSsOS%2FuP2yhAYIZ0uWG13v3wdInhKzyKszNc2byyWbXdQLW%2FV25zkMRYxdHOipE4xox%2FZA9dI3Uq48BjDytDY44WYQY23X5ZZ9I69vNXa4glLoPq%2BnvChqodahGaLQQL2JlHxUX56kgPemwBZ1xLhbdDLIHFzMrR%2FlBpwf1qFP3p7nFgnFF2tn5alpM4Kz4ovGl4x2xFx86F2tR0%2BSSIDWFKZ0w93Mb%2Br5ci6CxZzHxyoF8KXWiOd3jYOE9ouzeugtfTACy5mHpO9QeAVEcqhD9zF0IdgKbwBSi92%2Byx0ml9Fpc1XELokUiViyJ%2FmJ1jmsogfaWCTyEm5UzCsJdr1vrB%2F%2BS7QXc9vejHSsEAGkJMJGQiLIGOrEBo4yAD9V7Rj9%2FJGCUQr3wafAwoG1PYe%2BYerevGoGqYhBdMdHMmpNbiVW%2F5KK%2Fb4PTGfCNGiu1DqW%2FgHAdumBP4QrV%2BU8nJolC9e3X7Sdfc9LZUwe7wVwxtHAtUwkOyAczxpM5GlbPVIO4pmKaTOShexJ0EqylF6WcPwHJULDqSEr9Cq6oxq5M7aG4mL04J8rBYKjShhgMq6rF3UHjad4kRQTUiLzWa4g%2BRii08MgXypZK&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240513T125019Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFCEK7JFML%2F20240513%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=2a5b9a724ab32f29860b5b831e6c1c2fa694c0dd65ec05d95d0b05b298f114ef">
+            <p>Crisp guanciale in a pan, then toss with cooked pasta, Pecorino Romano cheese, and black pepper. The cheese melts into a creamy sauce for a classic Roman dish.</p>
+        </div>
+        <div class="recipe" onclick="redirect_shrimp()">
+            <h1>Quick, Concentrated Shrimp Stock</h1>
+            <img src="https://edamam-product-images.s3.amazonaws.com/web-img/4df/4df9373881c1e3a92dff4e4d940068c8?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEAsaCXVzLWVhc3QtMSJGMEQCIA%2FxrsGMlpdJb9ZUE7sZp4rWpWwJ0Nd01q9bzdpZeP%2FqAiBIwwHaEQmB8JaPYlxFwMD7SjB3wd8KJZDP8c4JVVGMgCq4BQh0EAAaDDE4NzAxNzE1MDk4NiIM0TBZBIebYyrsSJc4KpUF3PM2URumBxJTKs0AQdKiXzPdJlnZdWJjyDKzGPYt26Jyor9T7ZsIzHw%2B%2BLC4KqzV8EYm5BLTinahXX2CJ47hkU2UHa0hfRH3jT7u%2BFh5TyZSPMa8J5IrMlSW%2BB%2BEydBNBJTQ3REUiZOax%2B8ylyEFUjNXRUiwGlzbxQ%2Bp%2BbRKVO3VzU2UI79a2aYpCGioxxMkyf53GRiMkCyP3%2B6W0bq0LuBvWlkbBQLQk1Rr1Cgjhg1hLClXadj5Hk3UEhHj%2F4h6c%2BqyGB5h2AYxfAbQXlX28x1FIzP3yFFBwsNx8SJSc6vPwJ3OlU6MRMvcisvWJEKozvk8LB%2BTyAeDFapnQ6B1E0NrAiW01mKHBR7kehVbJram3ofytE9KLhXDDrX%2F6cO%2B66683RLPouII0Pht5K23hRNeiFaJCMhDu9had58eRh4ss1ohArlfiJJR4R%2F6F7agOgCWE5nBglfEztKRJHRYRKj0P3E%2BtDKImT%2FTNr2t0mTCHPJm8Idpdw5WNyOstrZwFkN%2BoNfGFf%2FnueLnBW%2BKxtlpWs4OFctkAnljoA9Rn0mKj%2BDU6dg6uRBh8MPqfTFjn3wlxo3keRvCCdbvfTtOCawHU27aeM4Ex92eM82AVxLo2QED61w1IkJ2xh333AHcZwXNE%2F2IMLkiWEIDDDtZizzn7JqYauWHiv10xQEUwH3S3w3q6nJD0RMXpnHqOVYepYZO968C1z%2ByC3EU6bQhpNuHKJQJl%2F89iQahUb8KQIhuf9Wznrj3CLl9PvSzigdqhpCz1y3YbCAsm8xQNvzhA35QJ%2BldapsJ%2Ba%2FDN%2BCkVtIsWGtPV%2Fg9Sh7JR%2F8Q1R%2BdRvXKC8nvhFV9jFIxiMUMgrdjq8cTEg4c9wgDubeSNUMByq8JBTDE44eyBjqyAQYPoYJ%2FVddhtrUue1dFy%2BedIr7IJuwgsT8EprCJhkwN%2FsjPsSTZO8dXks3LLKNQ1ee3jgiDlxjApbbcCbROaz2lvdlRAIgQgtPPCJr7piY5ENL4VcNpD83GsBSSvvEbZBHXTvzYol0fTRRJYGXp8%2BzEFDY8zGSnPWWA%2FjYxW8CjJNHauqQCpSJ5yavlYRFG3sHXvB4TRGnhKa6VDjmB2Bt7cFHpCVGI0QKibO25A8fV2FA%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240513T125028Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFGCDZTZ6R%2F20240513%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=04dd96584c61fd636162e58fa660197ecd2224537d73a8e3315fd6965925b671">
+            <p>Sauté shrimp shells with vegetables, add water, and simmer. Strain, then reduce by half. Use as a flavorful base for soups, risottos, or sauces.            </p>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='food.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <a href="/" class="logo">
+            <span>Food</span> 
+            <span>Master</span>
+        </a>
+
+        <div class="search-container">
+            <form method="GET" action="/result">
+                <input name="food" type="text" class="search-bar" placeholder="Search...">
+                <button type="submit" class="search-button" style="background: transparent; border: 0;" action="/result"></button>
+            </form>
+        </div>
+        <div class="hyperlinks">
+            <a href="/recipes" class="nav1">Recomendations</a>
+        </div>
+    </div>
+    <div class="content">
+        <img src="{{image}}">
+        <div class="">
+            <p>{{full_title}}</p>
+            <ul>
+                {% for item in ingredients %}
+                <li>{{ item['text'] }} </li>
+                {% endfor %}
+            </ul>
+            <p>For health</p>
+            <ul class="horizontal-list">
+                {% for item in health %}
+                <li>{{ item }} </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>
